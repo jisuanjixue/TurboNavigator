@@ -1,0 +1,35 @@
+<% content_for :title, "Modal navigation" %>
+
+<p class="my-3">This screen was presented as a modal.</p>
+
+<p class="mb-0">Triggered via the following Path Configuration rule:</p>
+<pre><code>
+{
+  "patterns": [
+    "/new$"
+  ],
+  "properties": {
+    "context": "modal"
+  }
+}
+</code></pre>
+
+<div class="list-group list-group-flush mx-n3 sm:mx-0">
+  <%= render "navigations/item",
+    path: navigation_path,
+    icon: "bi-arrow-return-right",
+    name: "Basic navigation",
+    description: "Dismiss the modal and push a screen on the main stack." %>
+
+  <%= render "navigations/item",
+    path: modal_path,
+    icon: "bi-arrow-right",
+    name: "Modal navigation",
+    description: "Push a screen on the modal stack." %>
+
+  <%= render "navigations/item",
+    path: turbo_recede_historical_location_path,
+    icon: "bi-arrow-down",
+    name: "Recede navigation",
+    description: "Dismiss this modal." %>
+</div>

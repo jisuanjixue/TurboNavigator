@@ -1,0 +1,30 @@
+<% content_for :title, "Basic navigation #2" %>
+
+<p class="my-3">Another screen pushed onto the navigation stack.</p>
+
+<div class="list-group list-group-flush mx-n3 sm:mx-0">
+
+  <%= render "navigations/item",
+    path: turbo_recede_historical_location_path,
+    icon: "bi-arrow-left",
+    name: "Recede navigation",
+    description: "Pop this screen off the stack." %>
+
+  <%= render "navigations/item",
+    path: second_navigation_path,
+    icon: "bi-arrow-clockwise",
+    name: "Visit same page",
+    description: "Reload this screen." %>
+
+  <%= render "navigations/item",
+    path: navigation_path,
+    icon: "bi-arrow-left",
+    name: "Visit previous page",
+    description: "Pop this screen and reload previous one." %>
+
+  <%= render "navigations/item",
+    path: root_path,
+    icon: "bi-arrow-bar-left",
+    name: "Clear all",
+    description: "Pop all screens off the stack." %>
+</div>
