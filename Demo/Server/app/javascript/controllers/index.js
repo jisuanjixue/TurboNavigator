@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import Bridge__FormController from "./bridge/form_controller"
+application.register("bridge--form", Bridge__FormController)
+
 import Bridge__HelloController from "./bridge/hello_controller"
 application.register("bridge--hello", Bridge__HelloController)

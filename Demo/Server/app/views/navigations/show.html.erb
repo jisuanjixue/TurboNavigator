@@ -1,37 +1,38 @@
 <div data-controller="bridge--hello">
-  <% content_for :title, "Basic navigation" %>
-  <p class="my-3">This screen was pushed onto the navigation stack.</p>
-  <p>This is the default behavior, no custom options are required.</p>
-  <div class="list-group list-group-flush mx-n3 sm:mx-0">
-    <%= render "navigations/item",
+</div>
+<% content_for :title, "Basic navigation" %>
+<p class="my-3">This screen was pushed onto the navigation stack.</p>
+<p>This is the default behavior, no custom options are required.</p>
+<div class="list-group list-group-flush mx-n3 sm:mx-0">
+  <%= render "navigations/item",
     path: second_navigation_path,
     icon: "bi-arrow-right",
     name: "Basic navigation",
     description: "Push another screen on the stack." %>
-    <%= render "navigations/item",
+  <%= render "navigations/item",
     path: replace_navigation_path,
     data: {turbo_action: :replace},
     icon: "bi-arrow-left-right",
     name: "Replace navigation",
     description: "Replace this screen with a new one." %>
-    <%= render "navigations/item",
+  <%= render "navigations/item",
     path: turbo_recede_historical_location_path,
     icon: "bi-arrow-left",
     name: "Recede navigation",
     description: "Pop this screen off the stack." %>
-    <%= render "navigations/item",
+  <%= render "navigations/item",
     path: turbo_resume_historical_location_path,
     icon: "bi-sign-stop",
     name: "Resume navigation",
     description: "Do nothing." %>
-    <%= render "navigations/item",
+  <%= render "navigations/item",
     path: "sms:555-555-5555",
     icon: "bi-chat",
     name: "<code>sms:</code> URLs".html_safe,
     description: "Handle non-http(s) URLs natively." %>
-    <%= render "navigations/item",
+  <%= render "navigations/item",
     path: "/not_found",
     icon: "bi-bug",
     name: "Error handling",
     description: "Visit a page that does not exist (404)." %>
-  </div>
+</div>

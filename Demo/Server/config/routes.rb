@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resource :dashboards, only: :show
   resources :resources
+  resources :posts
 
   resource :modal, only: %i[new show] do
     collection do

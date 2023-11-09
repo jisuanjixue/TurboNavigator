@@ -4,7 +4,7 @@
 //
 //  Created by wangxiaobo on 2023/11/7.
 //
-
+import Foundation
 import Strada
 
 class HelloComponent: BridgeComponent {

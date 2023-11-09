@@ -11,6 +11,8 @@
 		1D02759C2AF9EEDE00D81C35 /* HelloComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02759B2AF9EEDE00D81C35 /* HelloComponent.swift */; };
 		1D02759E2AFA0CD200D81C35 /* BridgeComponent+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02759D2AFA0CD200D81C35 /* BridgeComponent+App.swift */; };
 		1D0275A02AFA0D0E00D81C35 /* TurboWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02759F2AFA0D0E00D81C35 /* TurboWebViewController.swift */; };
+		1D962FA72AFB296500B47269 /* FormComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D962FA62AFB296500B47269 /* FormComponent.swift */; };
+		1DA985BD2AFC844100F7CDC1 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA985BC2AFC844100F7CDC1 /* PostComponent.swift */; };
 		8462832529B8C6B5004EFC9A /* TurboNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 8462832429B8C6B5004EFC9A /* TurboNavigator */; };
 		8484C2E929B132D20018596C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C2E829B132D20018596C /* AppDelegate.swift */; };
 		8484C2EB29B132D20018596C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484C2EA29B132D20018596C /* SceneDelegate.swift */; };
@@ -22,6 +24,8 @@
 		1D02759B2AF9EEDE00D81C35 /* HelloComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloComponent.swift; sourceTree = "<group>"; };
 		1D02759D2AFA0CD200D81C35 /* BridgeComponent+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BridgeComponent+App.swift"; sourceTree = "<group>"; };
 		1D02759F2AFA0D0E00D81C35 /* TurboWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboWebViewController.swift; sourceTree = "<group>"; };
+		1D962FA62AFB296500B47269 /* FormComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormComponent.swift; sourceTree = "<group>"; };
+		1DA985BC2AFC844100F7CDC1 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
 		8462832329B8C6A7004EFC9A /* TurboNavigator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TurboNavigator; path = ..; sourceTree = "<group>"; };
 		8484C2E529B132D20018596C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484C2E829B132D20018596C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		8484C2DC29B132D20018596C = {
 			isa = PBXGroup;
 			children = (
+				1DA985BC2AFC844100F7CDC1 /* PostComponent.swift */,
+				1D962FA62AFB296500B47269 /* FormComponent.swift */,
 				1D02759F2AFA0D0E00D81C35 /* TurboWebViewController.swift */,
 				1D02759D2AFA0CD200D81C35 /* BridgeComponent+App.swift */,
 				1D02759B2AF9EEDE00D81C35 /* HelloComponent.swift */,
@@ -161,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA985BD2AFC844100F7CDC1 /* PostComponent.swift in Sources */,
 				1D02759E2AFA0CD200D81C35 /* BridgeComponent+App.swift in Sources */,
 				8484C2E929B132D20018596C /* AppDelegate.swift in Sources */,
 				1D0275A02AFA0D0E00D81C35 /* TurboWebViewController.swift in Sources */,
+				1D962FA72AFB296500B47269 /* FormComponent.swift in Sources */,
 				1D02759C2AF9EEDE00D81C35 /* HelloComponent.swift in Sources */,
 				8484C2EB29B132D20018596C /* SceneDelegate.swift in Sources */,
 			);

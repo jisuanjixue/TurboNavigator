@@ -1,0 +1,19 @@
+<form
+  method="post"
+  data-controller="bridge--form"
+  data-action="turbo:submit-start->bridge--form#submitStart turbo:submit-end->bridge--form#submitEnd"
+  >
+    <label for="first-name" class="display --block space --bottom-s">What is your first name?</label>
+    <input type="text" name="first-name" id="first-name" placeholder="Type your first name…" />
+
+    <label for="last-name" class="display --block space --bottom-s">What is your last name?</label>
+    <input type="text" name="last-name" id="last-name" placeholder="Type your last name…" />
+  <button
+    class="button"
+    type="submit"
+    data-bridge--form-target="submit"
+    data-bridge-title="Submit"
+    >
+    Submit Form
+  </button>
+</form>
